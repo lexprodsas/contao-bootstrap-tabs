@@ -12,7 +12,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "D:\\Contributions\\contao-bootstrap-tabs"
+            "url": "https://github.com/lexprodsas/contao-bootstrap-tabs"
         }
     ],
     "homepage": "https://www.lexprod.net",
@@ -34,12 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Contao\\SkeletonBundle\\": "src/"
+            "Contao\\LexprodBootstrapBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Contao\\SkeletonBundle\\Tests\\": "tests/"
+            "Contao\\LexprodBootstrapBundle\\Tests\\": "tests/"
         }
     },
     "config": {
