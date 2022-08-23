@@ -8,3 +8,6 @@
 
 # Tools
 /tools/*/vendor
+
+#IDE
+.idea/*

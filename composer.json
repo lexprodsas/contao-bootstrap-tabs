@@ -54,7 +54,7 @@
             "bin-links": false,
             "target-directory": "tools"
         },
-        "contao-manager-plugin": "Contao\\SkeletonBundle\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Contao\\LexprodBootstrapBundle\\ContaoManager\\Plugin"
     },
     "scripts": {
         "all": [

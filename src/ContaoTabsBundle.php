@@ -10,10 +10,10 @@ declare(strict_types=1);
  * @license LGPL-3.0-or-later
  */
 
-namespace Contao\SkeletonBundle;
+namespace Contao\LexprodBootstrapBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class ContaoSkeletonBundle extends Bundle
+class ContaoTabsBundle extends Bundle
 {
 }

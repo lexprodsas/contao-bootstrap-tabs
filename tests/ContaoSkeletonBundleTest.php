@@ -12,15 +12,15 @@ declare(strict_types=1);
 
 namespace Contao\SkeletonBundle\Tests;
 
-use Contao\SkeletonBundle\ContaoSkeletonBundle;
+use Contao\SkeletonBundle\ContaoTabsBundle;
 use PHPUnit\Framework\TestCase;
 
 class ContaoSkeletonBundleTest extends TestCase
 {
     public function testCanBeInstantiated(): void
     {
-        $bundle = new ContaoSkeletonBundle();
+        $bundle = new ContaoTabsBundle();
 
-        $this->assertInstanceOf('Contao\SkeletonBundle\ContaoSkeletonBundle', $bundle);
+        $this->assertInstanceOf('Contao\SkeletonBundle\ContaoTabsBundle', $bundle);
     }
 }
