@@ -9,12 +9,16 @@
             "homepage": "https://github.com/luger95"
         }
     ],
-    "repositories": [
+    "funding": [
         {
-            "type": "path",
+            "type": "github",
             "url": "https://github.com/lexprodsas/contao-bootstrap-tabs"
         }
     ],
+    "support": {
+        "issues": "https://github.com/lexprodsas/contao-bootstrap-tabs/issues",
+        "source": "https://github.com/lexprodsas/contao-bootstrap-tabs"
+    },
     "homepage": "https://www.lexprod.net",
     "require": {
         "php": "^7.4 || ^8.0",
