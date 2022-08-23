@@ -9,5 +9,5 @@
 # Tools
 /tools/*/vendor
 
-#IDE
+# JetBrains IDE
 .idea/
