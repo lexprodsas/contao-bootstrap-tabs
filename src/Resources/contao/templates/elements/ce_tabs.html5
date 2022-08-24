@@ -1,9 +1,9 @@
 <?php $pillsId = $this->cssID[0] ? "pills-{$this->cssID[0]}" : "pills-{$this->id}";?>
 
-<?php var_dump(unserialize($this->data));?>
+<?php var_dump(deserialize($this->data));?>
 
 <ul class="<?= $this->class ?> nav nav-pills mb-3" role="tablist"<?= $this->cssID ?>>
-  <?php foreach (unserialize($this->data) as $key => $value):?>
+  <?php foreach (deserialize($this->data) as $key => $value):?>
       <?php $itemId = md5($key);?>
       <li class="nav-item" role="presentation">
       	<button
