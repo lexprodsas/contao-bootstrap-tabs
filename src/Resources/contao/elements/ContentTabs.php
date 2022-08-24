@@ -18,4 +18,4 @@ class ContentTabs extends Contao\ContentElement
     }
 }
 
-class_alias(ContentTabs::class, 'ContentBootstrapTabs');
+class_alias(ContentTabs::class, 'ContentTabs');
