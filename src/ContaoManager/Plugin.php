@@ -12,15 +12,19 @@ declare(strict_types=1);
 
 namespace Contao\LexprodBootstrapBundle\ContaoManager;
 
-use Contao\ManagerPlugin\Routing\RoutingPluginInterface;
-use Symfony\Component\Config\Loader\LoaderResolverInterface;
-use Symfony\Component\HttpKernel\KernelInterface;
+use Contao\CoreBundle\ContaoCoreBundle;
+use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
+use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
+use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
+use Contao\LexprodBootstrapBundle\ContaoTabsBundle;
 
-class Plugin implements RoutingPluginInterface
+class Plugin implements BundlePluginInterface
 {
-    public function getRouteCollection(LoaderResolverInterface $resolver, KernelInterface $kernel)
+    public function getBundles(ParserInterface $parser): array
     {
-        $file = __DIR__ . '/../Resources/config/routes.yml';
-        return $resolver->resolve($file)->load($file);
+        return [
+            BundleConfig::create(ContaoTabsBundle::class)
+                ->setLoadAfter([ContaoCoreBundle::class]),
+        ];
     }
 }
