@@ -1,10 +1,7 @@
-<?php $pillsId = 'pills';?>
-<?php if ($this->cssID[0]):?>
-	<?php $pillsId .= "-{$this->cssID[0]}";?>
-<?php endif;?>
+<?php $pillsId = $this->cssID[0] ? "pills-{$this->cssID[0]}" : "pills-{$this->id}";?>
 
 <ul class="<?= $this->class ?> nav nav-pills mb-3" role="tablist"<?= $this->cssID ?>>
-  <?php foreach ($this->data as $key => $value):?>
+  <?php foreach (unserialize($this->data) as $key => $value):?>
       <?php $itemId = md5($key);?>
       <li class="nav-item" role="presentation">
       	<button
