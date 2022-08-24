@@ -5,5 +5,7 @@ $GLOBALS['TL_CTE']['lexprodsasBootstrap'] = [
 ];
 
 if (TL_MODE === 'FE') {
-    $GLOBALS['TL_JAVASCRIPT'][] = 'assets/contao-component-bootstrap/bootstrap/js/dist/tab.js';
+    $GLOBALS['TL_JAVASCRIPT'][] = 'assets/contao-component-bootstrap/bootstrap/js/src/util/config.js';
+    $GLOBALS['TL_JAVASCRIPT'][] = 'assets/contao-component-bootstrap/bootstrap/js/src/base-component.js';
+    $GLOBALS['TL_JAVASCRIPT'][] = 'assets/contao-component-bootstrap/bootstrap/js/src/tab.js';
 }
