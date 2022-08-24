@@ -39,7 +39,13 @@
     "autoload": {
         "psr-4": {
             "Contao\\LexprodBootstrapBundle\\": "src/"
-        }
+        },
+        "classmap": [
+            "src/Resources/contao/"
+        ],
+        "exclude-from-classmap": [
+            "src/Resources/contao/dca/"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
