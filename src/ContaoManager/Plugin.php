@@ -20,7 +20,7 @@ class Plugin implements RoutingPluginInterface
 {
     public function getRouteCollection(LoaderResolverInterface $resolver, KernelInterface $kernel)
     {
-        $file = __DIR__ . '/../Resources/config/routes.yaml';
+        $file = __DIR__ . '/../Resources/config/routes.yml';
         return $resolver->resolve($file)->load($file);
     }
 }
