@@ -3,6 +3,13 @@
     "description": "Tabbed navigation system, based on bootstrap 5",
     "license": "LGPL-3.0-or-later",
     "type": "contao-bundle",
+    "keywords": [
+        "contao",
+        "tabs",
+        "nav",
+        "bootstrap",
+        "bundle"
+    ],
     "authors": [
         {
             "name": "Alexandre Normand",
@@ -44,6 +51,7 @@
             "src/Resources/contao/"
         ],
         "exclude-from-classmap": [
+            "src/Resources/contao/config/",
             "src/Resources/contao/dca/",
             "src/Resources/contao/languages/"
         ]
