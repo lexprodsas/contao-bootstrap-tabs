@@ -1,5 +1,5 @@
 <?php
 
-$GLOBALS['TL_CTE']['wrapper'] = [
-    'wrapperStart' => 'Contao\LexprodBootstrapBundle\ContentTabs',
+$GLOBALS['TL_CTE']['lexprodsasBootstrap'] = [
+    'lexprodsasBootstrapTabs' => 'Contao\LexprodBootstrapBundle\ContentTabs',
 ];
