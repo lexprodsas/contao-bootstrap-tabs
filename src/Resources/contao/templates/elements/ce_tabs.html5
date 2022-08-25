@@ -1,18 +1,19 @@
 <?php $pillsId = $this->cssID[0] ? "pills-{$this->cssID[0]}" : "pills-{$this->id}";?>
 <?php $tabsData = deserialize($this->data); ?>
 
-<ul class="<?= $this->class ?> nav nav-pills mb-3" role="tablist"<?= $this->cssID ?>>
+<ul class="<?= $this->class ?> nav nav-pills" role="tablist"<?= $this->cssID ?>>
   <?php foreach ($tabsData as $itemId => $item):?>
-      <li class="nav-item" role="presentation">
+	<?php $activeItem = $itemId === 0;?>
+      <li class="nav-item<?php if ($itemId > 0):?> ms-1<?php endif;?>" role="presentation">
       	<button
       		type="button"
-    		class="nav-link<?php if (0): ?> active<?php endif;?>"
+    		class="nav-link<?php if ($activeItem): ?> active<?php endif;?>"
     		id="<?= "$pillsId-$itemId"?>-tab"
     		data-bs-toggle="pill"
     		data-bs-target="#<?= "$pillsId-$itemId"?>"
       		role="tab"
       		aria-controls="<?= "$pillsId-$itemId"?>"
-      		aria-selected="<?= 0 ? 'true' : 'false'?>"
+      		aria-selected="<?= $activeItem ? 'true' : 'false'?>"
   		>
       		<?= $item['key'] ?>
   		</button>
@@ -23,7 +24,7 @@
 <div class="tab-content">
   <?php foreach ($tabsData as $itemId => $item):?>
       <div
-          class="tab-pane fade<?php $itemId === 0 ? ' show' : '';?>"
+          class="tab-pane fade<?php if ($itemId === 0):?> show active<?php endif;?>"
           id="<?= "$pillsId-$itemId"?>"
           role="tabpanel"
           aria-labelledby="<?= "$pillsId-$itemId"?>-tab"
