@@ -5,6 +5,6 @@ $GLOBALS['TL_CTE']['lexprodsasBootstrap'] = [
 ];
 
 if (TL_MODE === 'FE') {
-    $GLOBALS['TL_JAVASCRIPT'][] = 'https://unpkg.com/@popperjs/core@2';
-    $GLOBALS['TL_JAVASCRIPT'][] = 'assets/contao-component-bootstrap/bootstrap/dist/js/bootstrap.js|async';
+    $GLOBALS['TL_JAVASCRIPT'][] = 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js';
+    $GLOBALS['TL_JAVASCRIPT'][] = 'assets/contao-component-bootstrap/bootstrap/dist/js/bootstrap.bundle.js|async';
 }
